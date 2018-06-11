@@ -1,0 +1,26 @@
+{
+  "name": "surge",
+  "version": "0.0.1",
+  "description": "Example demo in Surge",
+  "main": "index.js",
+  "scripts": {
+    "dev:vueckeditor2": "vuepress dev vue-ckeditor2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dangvanthanh/surge.git"
+  },
+  "author": "Dang Van Thanh <chieuhue@gmail.com> (dangthanh.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dangvanthanh/surge/issues"
+  },
+  "homepage": "https://github.com/dangvanthanh/surge#readme",
+  "devDependencies": {
+    "vuepress": "^0.10.1"
+  },
+  "dependencies": {
+    "ckeditor": "^4.9.2",
+    "vue-ckeditor2": "^2.0.3"
+  }
+}
