@@ -4,7 +4,8 @@
   "description": "Example demo in Surge",
   "main": "index.js",
   "scripts": {
-    "dev:vueckeditor2": "vuepress dev vue-ckeditor2"
+    "dev:vueckeditor2": "vuepress dev vue-ckeditor2",
+    "build:vueckeditor2": "vuepress build vue-ckeditor2 && surge vue-ckeditor2/.vuepress/dist"
   },
   "repository": {
     "type": "git",
