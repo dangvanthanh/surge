@@ -21,7 +21,18 @@ export default {
       `,
       config: {
         toolbar: [
-          ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', 'NumberedList', 'BulletedList', 'Format', 'FontSize']
+          [
+            'Format',
+            'FontSize',
+            'Bold',
+            'Italic',
+            'Underline',
+            'Strike',
+            'Subscript',
+            'Superscript',
+            'NumberedList',
+            'BulletedList'
+          ]
         ],
         height: 200
       }

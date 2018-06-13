@@ -23,21 +23,43 @@ export default {
       `,
       config: {
         toolbar: [
-          [
-            'Bold',
-            'Italic',
-            'Underline',
-            'Strike',
-            'Subscript',
-            'Superscript',
-            'NumberedList',
-            'BulletedList',
-            'Format',
-            'FontSize',
-            'Image',
-            'EasyImageUpload',
-            'CreatePlaceholder'
-          ]
+          {
+            name: 'clipboard',
+            items: ['Undo', 'Redo']
+          },
+          { name: 'styles', items: ['Styles', 'Format'] },
+          {
+            name: 'basicstyles',
+            items: [
+              'Bold',
+              'Italic',
+              'Strike',
+              '-',
+              'Subscript',
+              'Superscript',
+              'RemoveFormat'
+            ]
+          },
+          {
+            name: 'pagragraph',
+            items: [
+              'NumberedList',
+              'BulletedList',
+              '-',
+              'Outdent',
+              'Indent',
+              '-',
+              'Blockquote'
+            ]
+          },
+          {
+            name: 'links',
+            items: ['Link', 'Unlink']
+          },
+          {
+            name: 'insert',
+            items: ['Image', 'EasyImageUpload', 'CreatePlaceholder']
+          }
         ],
         height: 200,
         extraPlugins:
