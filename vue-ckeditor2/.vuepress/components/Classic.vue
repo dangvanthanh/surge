@@ -22,6 +22,9 @@ export default {
         <p>After you get your head around these 3 essentials, all you have to do is grab your keyboard and the rest will follow.</p>
       `,
       config: {
+        mentions: [
+          { feed: ['Dang Thanh', 'Sinh Hoa Long', 'Tuan Vo'], marker: '@' }
+        ],
         toolbar: [
           {
             name: 'clipboard',
@@ -63,7 +66,7 @@ export default {
         ],
         height: 200,
         extraPlugins:
-          'image2,autogrow,xml,ajax,cloudservices,balloonpanel,balloontoolbar,imagebase,easyimage,placeholder',
+          'image2,autogrow,xml,ajax,cloudservices,balloonpanel,balloontoolbar,imagebase,easyimage,placeholder,mentions,emoji,autocomplete',
         emovePlugins: 'image',
         cloudServices_tokenUrl:
           'https://33372.cke-cs.com/token/dev/kquv5QAPjvSD8p7GYFSFa3uKP6OcikCtjcyDpqW1Aqy3eotwe2pPLVdAjJVu',
