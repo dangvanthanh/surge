@@ -4,6 +4,7 @@
   "description": "Example demo in Surge",
   "main": "index.js",
   "scripts": {
+    "precommit": "pretty-quick --staged",
     "dev:vueckeditor2": "vuepress dev vue-ckeditor2",
     "build:vueckeditor2": "vuepress build vue-ckeditor2 && surge vue-ckeditor2/.vuepress/dist"
   },
@@ -18,7 +19,10 @@
   },
   "homepage": "https://github.com/dangvanthanh/surge#readme",
   "devDependencies": {
-    "vuepress": "^0.10.1"
+    "husky": "^0.14.3",
+    "prettier": "1.13.7",
+    "pretty-quick": "^1.6.0",
+    "vuepress": "^0.10.2"
   },
   "dependencies": {
     "ckeditor": "^4.9.2",
