@@ -5,7 +5,10 @@
 </template>
 
 <script>
+import VueCkeditor from 'vue-ckeditor2';
+
 export default {
+  components: { VueCkeditor },
   data() {
     return {
       content: `
@@ -121,4 +124,3 @@ export default {
   }
 };
 </script>
-

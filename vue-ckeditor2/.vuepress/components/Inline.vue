@@ -6,6 +6,8 @@
 </template>
 
 <script>
+import VueCkeditor from 'vue-ckeditor2';
+
 const users = [
   {
     id: 1,
@@ -81,6 +83,7 @@ let dataFeed = function(opts, callback) {
 };
 
 export default {
+  components: { VueCkeditor },
   data() {
     return {
       content1: `
