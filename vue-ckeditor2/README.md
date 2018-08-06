@@ -10,6 +10,20 @@ This is a documentation for Ckeditor 4 using Vue.js.
 
 ## Getting Started
 
+You need requirement [Ckeditor 4](https://ckeditor.com/ckeditor-4/) before use `vue-ckeditor2`.
+
+To start using CKEditor 4 on your website, add a single `<script>` tag to your HTML page:
+
+```html
+<script src="https://cdn.ckeditor.com/4.10.0/standard/ckeditor.js"></script>
+```
+
+or
+
+```html
+<script src="path/to/ckeditor.js"></script>
+```
+
 ### NPM
 
 ```
@@ -19,7 +33,7 @@ $ npm install vue-ckeditor2 --save
 ### CDN
 
 ```html
-<script src="https://unpkg.com/vue-ckeditor2"></script>
+<script src="//unpkg.com/vue-ckeditor2"></script>
 ```
 
 ## Usage

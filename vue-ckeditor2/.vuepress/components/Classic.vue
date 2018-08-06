@@ -1,6 +1,7 @@
 <template>
   <div class="mt1">
     <vue-ckeditor v-model="content" :config="config"/>
+    <div>{{ content }}</div>
   </div>
 </template>
 
