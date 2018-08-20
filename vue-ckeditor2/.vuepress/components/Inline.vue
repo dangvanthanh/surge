@@ -1,7 +1,7 @@
 <template>
   <div class="mt1">
-    <vue-ckeditor v-model="content1" :config="config" types="inline" />
-    <vue-ckeditor v-model="content2" :config="config" types="inline" />
+    <vue-ckeditor v-model="content" :config="config" types="inline" :readOnlyMode="readOnlyMode" />
+    <button @click="changeReadOnly" class="btn">Change Read Only</button>
   </div>
 </template>
 
@@ -86,11 +86,7 @@ export default {
   components: { VueCkeditor },
   data() {
     return {
-      content1: `
-        <h2>Simply delicious newsletter</h2>
-        <h3>Food, travel and inspirations</h3>
-      `,
-      content2: `
+      content: `
         <h3>Friday favorites - Homemade pizza</h3>
         <p>Friday is finally here! I know it’s been an exhausting week and the last thing on your mind right now is getting stuck in the kitchen preparing a snack to accompany you during your regular Netflix session.</p>
         <p>Don’t worry - I have just the thing for you.</p>
@@ -133,8 +129,14 @@ export default {
         removeDialogTabs: 'image:advanced;link:advanced;link:target',
         throttle: 200,
         height: 200
-      }
+      },
+      readOnlyMode: true
     };
+  },
+  methods: {
+    changeReadOnly() {
+      this.readOnlyMode = !this.readOnlyMode;
+    }
   }
 };
 </script>
@@ -188,5 +190,10 @@ ul.cke_autocomplete_panel .photo {
 .cke_autocomplete_panel .fullname {
   padding-left: 5px;
   color: #b7b7b7;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
 }
 </style>
