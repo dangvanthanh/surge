@@ -125,7 +125,7 @@ export default {
           'https://cdn.ckeditor.com/4.10.0/full-all/contents.css',
           'assets/mentions/contents.css'
         ],
-        extraPlugins: 'mentions,emoji,autocomplete',
+        extraPlugins: 'mentions,autocomplete',
         removeDialogTabs: 'image:advanced;link:advanced;link:target',
         throttle: 200,
         height: 200

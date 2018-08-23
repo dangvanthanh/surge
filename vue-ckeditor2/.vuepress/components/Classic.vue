@@ -69,7 +69,7 @@ export default {
         ],
         height: 200,
         extraPlugins:
-          'image2,autogrow,xml,ajax,cloudservices,balloonpanel,balloontoolbar,imagebase,easyimage,placeholder,mentions,emoji,autocomplete',
+          'image2,autogrow,xml,ajax,cloudservices,balloonpanel,balloontoolbar,imagebase,easyimage,placeholder,mentions,autocomplete',
         emovePlugins: 'image',
         cloudServices_tokenUrl:
           'https://33372.cke-cs.com/token/dev/kquv5QAPjvSD8p7GYFSFa3uKP6OcikCtjcyDpqW1Aqy3eotwe2pPLVdAjJVu',

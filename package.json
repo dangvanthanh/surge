@@ -25,6 +25,7 @@
     "vuepress": "^0.14.2"
   },
   "dependencies": {
-    "vue-ckeditor2": "^2.0.9"
+    "vue-ckeditor2": "^2.0.9",
+    "vue-tabs-component": "^1.4.0"
   }
 }
