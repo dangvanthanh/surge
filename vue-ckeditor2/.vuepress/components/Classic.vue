@@ -1,6 +1,6 @@
 <template>
   <div class="mt1">
-    <vue-ckeditor v-model="content" :config="config"/>
+    <vue-ckeditor v-model="content" :config="config" @dialogDefinition="onDialogDefinition($event)"/>
   </div>
 </template>
 
@@ -121,6 +121,11 @@ export default {
         autoGrow_maxHeight: 600
       }
     };
+  },
+  methods: {
+    onDialogDefinition(evt) {
+      console.log(evt);
+    }
   }
 };
 </script>
