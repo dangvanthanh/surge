@@ -4,8 +4,10 @@
   "description": "Example demo in Surge",
   "main": "index.js",
   "scripts": {
-    "dev:vueckeditor2": "vuepress dev vue-ckeditor2",
-    "build:vueckeditor2": "vuepress build vue-ckeditor2 && surge vue-ckeditor2/.vuepress/dist"
+    "dev:ckeditor": "vuepress dev vue-ckeditor2",
+    "build:ckeditor": "vuepress build vue-ckeditor2 && surge vue-ckeditor2/.vuepress/dist",
+    "dev:katex": "vuepress dev vue-a11y-katex",
+    "build:katex": "vuepress build vue-a11y-katex && surge vue-a11y-katex/.vuepress/dist"
   },
   "husky": {
     "hooks": {
@@ -24,12 +26,14 @@
   "homepage": "https://github.com/dangvanthanh/surge#readme",
   "devDependencies": {
     "husky": "^1.1.2",
+    "katex": "^0.10.0",
     "prettier": "1.14.3",
     "pretty-quick": "^1.8.0",
     "vuepress": "^0.14.4"
   },
   "dependencies": {
     "vue-ckeditor2": "^2.1.1",
-    "vue-tabs-component": "^1.5.0"
+    "vue-tabs-component": "^1.5.0",
+    "vue-a11y-katex": "0.0.9"
   }
 }
